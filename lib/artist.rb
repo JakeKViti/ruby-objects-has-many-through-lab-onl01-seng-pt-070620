@@ -15,9 +15,11 @@ class Artist
   def songs
     test = []
     Song.all.select do |song|
-    song.artist == self
+    if song.artist == self
     test << song.artist
   end
+  end
+  test
   end
 
   def genres
