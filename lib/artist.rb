@@ -13,8 +13,10 @@ class Artist
   end
 
   def songs
+    test = []
     Song.all.select do |song|
     song.artist == self
+    test << song.artist
   end
   end
 
