@@ -19,6 +19,6 @@ class Genre
   end
 
   def artists
-
+    Song.all.map {|song| song.artist}
   end
 end
